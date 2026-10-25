@@ -1,0 +1,43 @@
+{
+  "model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "enable_thinking": false
+  },
+  "data": {
+    "train_file": "examples/sample_chat.jsonl",
+    "eval_file": null,
+    "validation_split": 0.1,
+    "max_length": 512
+  },
+  "lora": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "training": {
+    "output_dir": "outputs/qwen3-0.6b-lora",
+    "epochs": 1,
+    "train_batch_size": 1,
+    "eval_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.03,
+    "logging_steps": 10,
+    "save_steps": 100,
+    "eval_steps": 100,
+    "save_total_limit": 2,
+    "seed": 42,
+    "gradient_checkpointing": true,
+    "max_retries": 2
+  }
+}

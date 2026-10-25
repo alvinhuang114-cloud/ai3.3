@@ -1,0 +1,6 @@
+# Kaggle usually provides CUDA-enabled PyTorch. Keep torch out of this file so
+# pip does not replace the notebook's GPU-compatible build.
+transformers>=4.51.0,<5.0.0
+peft>=0.15.0,<1.0.0
+accelerate>=1.6.0,<2.0.0
+safetensors>=0.5.0,<1.0.0

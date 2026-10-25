@@ -1,0 +1,4 @@
+{"messages":[{"role":"user","content":"What is a model checkpoint?"},{"role":"assistant","content":"A model checkpoint is a saved training state that can be used to resume a run or inspect a model at a particular point."}]}
+{"messages":[{"role":"user","content":"Why validate a dataset before training?"},{"role":"assistant","content":"Validation catches missing fields, malformed records, and empty files before they consume GPU time."}]}
+{"messages":[{"role":"user","content":"What does LoRA change during fine-tuning?"},{"role":"assistant","content":"LoRA trains small adapter matrices while keeping the original model weights frozen."}]}
+{"messages":[{"role":"user","content":"Where should training checkpoints be saved in Kaggle?"},{"role":"assistant","content":"Save them under /kaggle/working so they can be included when you save a notebook version."}]}

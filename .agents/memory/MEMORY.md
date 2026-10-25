@@ -1,0 +1,1 @@
+- [AI3.3 project workflow](ai33-project-workflow.md) — keep model work free-tier friendly and user-supervised; don't train, overwrite, commit, or push without approval.
